@@ -1,0 +1,393 @@
+
+                           ___________________________________
+                           |                                  |
+                           | BetDaq System Configuration File |
+                            __________________________________
+
+
+
+
+                   Auto-shutdown   Auto-shutdown time (HH:MM)   Application Name       Price history slots            Web control files path
+                   =============   ==========================   =================      ===================   ========================================
+GeneralParameters       yes                   00:59            "API-NG / BSP-East"            3            c:\Bypass\Workarea\WebSites\BetdaqRemoteControl
+
+
+
+
+
+                   User name   Password   Orders changed polling period (msecs)   BetDaq endpoint
+                   =========   ========   =====================================   ==================
+BetDaqExchange     bmaraTWO    cheltenham                    250                    api.betdaqb2b.com
+
+
+                   Top event name   Child event names
+                   ==============   ==========================
+EventTree          "Horse Racing"   "UK Racing" "Irish Racing"
+
+
+
+                   Market types of interest (codes for Win, Place, etc)
+                   ====================================================
+MarketTypes        1 2
+
+
+
+                   Event restriction active   Allow only events whose names contain
+                   ========================   =====================================
+EventRestriction             no               Bath
+
+
+
+                   Horse restriction active   Ignore Markets containing any of the following horse names
+                   ========================   ==========================================================
+HorseRestriction             yes              "Polar Eyes"
+
+
+
+                   Enable Betfair Pricing   Betting endpoint                                       Place market attack
+                   ======================   ====================================================   ===================
+BetFairExchange           yes               https://api.betfair.com/exchange/betting/json-rpc/v1           yes
+
+
+                  User name    Password    Application key    Certificate location   Certificate subject   "Authentication endpoint"
+                   ==========   =========   ================   ====================   ===================   =============================================
+Authentication    magicianltd01    Magician001  On2epw07kFZs2vjH         My                   API-NG         https://identitysso.betfair.com/api/certlogin
+
+				Robot Types
+				=============================================
+RobotTypes      SP_HORSES SP_DOGS
+
+
+                 Top event name   Child event names
+                   ==============   =================
+EventTree          "Horse Racing" AU NZ
+EventTree          "Greyhound Racing" AU NZ
+
+
+
+
+                        Event name as specified in BetDaq exchange event tree above
+                        ===========================================================
+RobotParameters         AU
+
+
+
+                 Number of   Risk    Iceberg   Back stake   Market   Close position   Lock loss   Close position   Liquidity check
+                  winners    limit    limit      limit      depth     mode enabled      limit      count limit         enabled        Kelly bank
+                 =========   =====   =======   ==========   ======   ==============   =========   ==============   ===============   ===========
+RiskParameters       0           0        0         0           3           no             20            15                yes            0      0   1  5  7   1
+RiskParameters       SP1         0        0         0           3           no             20            15                yes            0      0   1  5  7   1
+RiskParameters       SP2         0        0         0           3           no             20            15                yes            0      0   1  5  7   1
+RiskParameters       SP3         0        0         0           3           no             20            15                yes            0      0   1  5  7   1
+RiskParameters       SP4         0        0         0           3           no             20            15                yes            0      0   1  5  7   1
+
+
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume       0             2              20             50            30              13
+BetfairTradedVolume       1             2              20             50            30              13
+BetfairTradedVolume       2             2              40            100            30              25
+BetfairTradedVolume       3             2              40            100            30              25
+BetfairTradedVolume       4             2              40            100            30              25
+
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+
+
+
+PollingFrequency        5              300   1.0 -1 -1
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+
+
+
+PollingFrequency         5             300   1.0 -1 -1
+
+                     
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+
+
+
+PollingFrequency         5             300   1.0 -1 -1
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+
+
+
+PollingFrequency         5             300   1.0 -1 -1
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10      10
+LiquidityCheck             1           10      10
+LiquidityCheck             2           10      10
+LiquidityCheck             3           10      10
+LiquidityCheck             4           10      10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Lay   Back     no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7         7       13    13      1      5            allow
+SpreadParameters           SP2               7         7       13    13      1      5            allow
+SpreadParameters           SP3               7         7       13    13      1      5            allow
+SpreadParameters           SP4               7         7       13    13      1      5            allow
+
+ 
+
+                        Event name as specified in BetDaq exchange event tree above
+                        ===========================================================
+RobotParameters         NZ
+
+
+
+                 Number of   Risk    Iceberg   Back stake   Market   Close position   Lock loss   Close position   Liquidity check
+                  winners    limit    limit      limit      depth     mode enabled      limit      count limit         enabled        Kelly bank
+                 =========   =====   =======   ==========   ======   ==============   =========   ==============   ===============   ===========
+RiskParameters       0           0        0         0           3           no             20            15                yes            0      0   1  5  7   1
+RiskParameters       SP1         0        0         0           3           no             20            15                yes            0      0   1  5  7   1
+RiskParameters       SP2         0        0         0           3           no             20            15                yes            0      0   1  5  7   1
+RiskParameters       SP3         0        0         0           3           no             20            15                yes            0      0   1  5  7   1
+RiskParameters       SP4         0        0         0           3           no             20            15                yes            0      0   1  5  7   1
+
+
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume       1             2             1000           1000           20              10
+BetfairTradedVolume       2             2             1000           1000           20              20
+BetfairTradedVolume       3             2             1000           1000           20              20
+BetfairTradedVolume       4             2             1000           1000           20              20
+
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5            300   1.0 -1 -1
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5            300   1.0 -1 -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5            300   1.0 -1 -1
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5            300   1.0 -1 -1
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10      10
+LiquidityCheck             1           10      10
+LiquidityCheck             2           10      10
+LiquidityCheck             3           10      10
+LiquidityCheck             4           10      10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Lay   Back     no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1             7         7       13    13      1      5            allow
+SpreadParameters           SP2             7         7       13    13      1      5            allow
+SpreadParameters           SP3             7         7       13    13      1      5            allow
+SpreadParameters           SP4             7         7       13    13      1      5            allow
+
+ 
+
+                        Event name as specified in BetDaq exchange event tree above
+                        ===========================================================
+RobotParameters         Greyhounds
+
+
+
+                 Number of   Risk    Iceberg   Back stake   Market   Close position   Lock loss   Close position   Liquidity check
+                  winners    limit    limit      limit      depth     mode enabled      limit      count limit         enabled        Kelly bank
+                 =========   =====   =======   ==========   ======   ==============   =========   ==============   ===============   ===========
+RiskParameters       0           0        0         0           3           no             20            15                yes            0      0   1  5  7   1
+RiskParameters       SP1         0        0         0           3           no             20            15                yes            0      0   1  5  7   1
+RiskParameters       SP2         0        0         0           3           no             20            15                yes            0      0   1  5  7   1
+RiskParameters       SP3         0        0         0           3           no             20            15                yes            0      0   1  5  7   1
+RiskParameters       SP4         0        0         0           3           no             20            15                yes            0      0   1  5  7   1
+
+
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume       1             2             1000           1000           20              10
+BetfairTradedVolume       2             2             1000           1000           20              20
+BetfairTradedVolume       3             2             1000           1000           20              20
+BetfairTradedVolume       4             2             1000           1000           20              20
+
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5            300   1.0 -1 -1
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5            300   1.0 -1 -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5            300   1.0 -1 -1
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5            300   1.0 -1 -1
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10      10
+LiquidityCheck             1           10      10
+LiquidityCheck             2           10      10
+LiquidityCheck             3           10      10
+LiquidityCheck             4           10      10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Lay   Back     no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1             7         7       13    13      1      5            allow
+SpreadParameters           SP2             7         7       13    13      1      5            allow
+SpreadParameters           SP3             7         7       13    13      1      5            allow
+SpreadParameters           SP4             7         7       13    13      1      5            allow

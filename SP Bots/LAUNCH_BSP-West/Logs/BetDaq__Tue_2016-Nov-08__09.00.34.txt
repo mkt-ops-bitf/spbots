@@ -1,0 +1,281 @@
+
+
+08/Nov/16 09:00:34   CBetFairExchange::Login attempt[ 0 ] - The operation completed successfully.
+
+
+08/Nov/16 09:00:34   BENCHMARK, CBetFairExchange::CancelBets__Async: 23 msecs, 559 micros, 913 nsecs
+
+08/Nov/16 09:00:34   CBetDaqSystem::GetBetFairMarkets, collecting markets from the following events tree: Horse Racing, FR, GB, IE, UAE, US, ZA
+
+08/Nov/16 09:00:34   CProductsCache::UpdateEventDetails, venue present but parent event name [ Saint (FRA) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Saint-Cloud (8th November 2016) ]
+
+08/Nov/16 09:00:34   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 10 msecs, 382 micros, 414 nsecs
+
+08/Nov/16 09:00:34   CProductsCache::UpdateEventDetails, venue present but parent event name [ Saint (FRA) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Saint-Cloud (8th November 2016) ]
+
+08/Nov/16 09:00:34   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 19 msecs, 539 micros, 986 nsecs
+
+08/Nov/16 09:00:34   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 7 msecs, 704 micros, 695 nsecs
+
+08/Nov/16 09:00:34   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 7 msecs, 769 micros, 285 nsecs
+
+08/Nov/16 09:00:35   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 7 msecs, 821 micros, 666 nsecs
+
+08/Nov/16 09:00:35   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 7 msecs, 952 micros, 27 nsecs
+
+08/Nov/16 09:00:35   CProductsCache::UpdateEventDetails, venue present but parent event name [ Newcastle (8th November 2016) ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Newcastle (8th November 2016) ]
+
+08/Nov/16 09:00:35   CProductsCache::UpdateEventDetails, venue present but parent event name [ Sedgefield (8th November 2016) ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Sedgefield (8th November 2016) ]
+
+08/Nov/16 09:00:35   CProductsCache::UpdateEventDetails, venue present but parent event name [ Lingfield (8th November 2016) ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Lingfield (8th November 2016) ]
+
+08/Nov/16 09:00:35   CProductsCache::UpdateEventDetails, venue present but parent event name [ Huntingdon (8th November 2016) ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Huntingdon (8th November 2016) ]
+
+08/Nov/16 09:00:35   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 10 msecs, 670 micros, 705 nsecs
+
+08/Nov/16 09:00:35   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 10 msecs, 698 micros, 274 nsecs
+
+08/Nov/16 09:00:35   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 9 msecs, 213 micros, 891 nsecs
+
+08/Nov/16 09:00:35   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 9 msecs, 665 micros, 625 nsecs
+
+08/Nov/16 09:00:35   CProductsCache::UpdateEventDetails, venue present but parent event name [ ZiaP (US) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Zia Park (8th November 2016) ]
+
+08/Nov/16 09:00:35   CProductsCache::UpdateEventDetails, venue present but parent event name [ Parx (US) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Parx Racing At Philadelphia Park (8th November 2016) ]
+
+08/Nov/16 09:00:35   CProductsCache::UpdateEventDetails, venue present but parent event name [ FingL (US) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Finger Lakes (8th November 2016) ]
+
+08/Nov/16 09:00:35   CProductsCache::UpdateEventDetails, venue present but parent event name [ MountP (US) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Mountaineer Park (9th November 2016) ]
+
+08/Nov/16 09:00:35   CProductsCache::UpdateEventDetails, venue present but parent event name [ TPara (US) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Turf Paradise (8th November 2016) ]
+
+08/Nov/16 09:00:35   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 7 msecs, 661 micros, 766 nsecs
+
+08/Nov/16 09:00:35   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 6 msecs, 444 micros, 800 nsecs
+
+08/Nov/16 09:00:36   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 8 msecs, 462 micros, 837 nsecs
+
+08/Nov/16 09:00:36   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 8 msecs, 388 micros, 8 nsecs
+
+08/Nov/16 09:00:36   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 5 msecs, 726 micros, 436 nsecs
+
+08/Nov/16 09:00:36   CProductsCache::UpdateEventDetails, venue present but parent event name [ Vaal (RSA) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Vaal (8th November 2016) ]
+
+08/Nov/16 09:00:36   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 9 msecs, 181 micros, 202 nsecs
+
+08/Nov/16 09:00:36   CProductsCache::UpdateEventDetails, venue present but parent event name [ Vaal (RSA) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Vaal (8th November 2016) ]
+
+08/Nov/16 09:00:36   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 8 msecs, 737 micros, 738 nsecs
+
+08/Nov/16 09:00:36   CBetDaqSystem::GetBetFairMarkets, collecting markets from the following events tree: Horse Racing, FR, GB, IE, UAE, US, ZACBetDaqSystem::GetBetFairMarkets, collecting markets from the following events tree: Greyhound Racing, GB, IE
+
+08/Nov/16 09:00:36   CProductsCache::UpdateEventDetails, venue present but formed event Betdaq name [ Newcastle (8th November 2016) ] is already inserted in our mapping.
+
+Hence this event name will remain as is and ignored [ Newc 8th Nov ]
+
+08/Nov/16 09:00:36   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 8 msecs, 161 micros, 943 nsecs
+
+08/Nov/16 09:00:36   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 7 msecs, 804 micros, 730 nsecs
+
+08/Nov/16 09:00:36   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 9 msecs, 375 micros, 365 nsecs
+
+08/Nov/16 09:00:36   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 8 msecs, 729 micros, 861 nsecs
+
+08/Nov/16 09:00:36   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 8 msecs, 525 micros, 852 nsecs
+
+08/Nov/16 09:00:36   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 10 msecs, 663 micros, 222 nsecs
+
+08/Nov/16 09:00:36   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 6 msecs, 967 micros, 32 nsecs
+
+08/Nov/16 09:00:36   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 8 msecs, 37 micros, 490 nsecs
+
+08/Nov/16 09:00:36   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 8 msecs, 718 micros, 833 nsecs
+
+08/Nov/16 09:00:36   CBetDaqSystem::GetBetFairMarkets, collecting markets from the following events tree: Horse Racing, FR, GB, IE, UAE, US, ZACBetDaqSystem::GetBetFairMarkets, collecting markets from the following events tree: Greyhound Racing, GB, IECBetDaqSystem::GetBetFairMarkets, collecting markets from the following events tree: Soccer, English Premier League, UEFA Champions League
+
+08/Nov/16 09:00:36   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 5 msecs, 144 micros, 734 nsecs
+
+08/Nov/16 09:00:36   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 5 msecs, 279 micros, 33 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 8 msecs, 759 micros, 399 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 3 msecs, 910 micros, 833 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 4 msecs, 396 micros, 831 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 5 msecs, 258 micros, 947 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 4 msecs, 692 micros, 605 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 4 msecs, 552 micros, 792 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 16 msecs, 715 micros, 365 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 4 msecs, 918 micros, 670 nsecs
+
+08/Nov/16 09:00:37   BET_FAIR::CProductsCache::AddMarkets, exception cought: Key not found
+
+Json ignored:
+
+{"id":3,"jsonrpc":"2.0","result":[{"description":{"bettingType":"ODDS","bspMarket":false,"discountAllowed":true,"marketBaseRate":5,"marketTime":"2016-11-09T19:30:00.000Z","marketType":"MATCH_ODDS","persistenceEnabled":true,"regulator":"GIBRALTAR REGULATOR","rules":"<br><a href=\"http://www.stats.betradar.com/statistics/betfaircom/?language=en\" target=\"_blank\"><img src=\"http://content-cache.betfair.com/images/en_GB/mr_fg.gif\" title=\"Form Guide\" border=\"0\"></a><a href=\"http://www.livescore.betradar.com/?alias=betfair&language=en\" target=\"_blank\"><img src=\"http://content-cache.betfair.com/images/en_GB/mr_ls.gif\" title=\"Live Scores\" border=\"0\"></a><br><br><b>Market Information</b><br><br>For further information please see <a href=http://content.betfair.com/aboutus/content.asp?sWhichKey=Rules%20and%20Regulations#undefined.do style=color:0163ad; text-decoration: underline; target=_blank>Rules & Regs</a>.<br><br>Predict the result of this match. <b><font color=red> All bets apply to Full Time according to the match officials, plus any stoppage time.  Extra-time/penalty shoot-outs are not included.</b></font><br><br> <b><font color=blue>If this market is re-opened for In-Play betting, </b></font> unmatched bets will be cancelled at kick off and the market turned in play. The market will be suspended if it appears that a goal has been scored, a penalty will be given, or a red card will be shown. With the exception of bets for which the \"keep\" option has been selected, unmatched bets will be cancelled in the event of a confirmed goal or sending off. Please note that should our data feeds fail we may be unable to manage this game in-play. <br><br>Customers should be aware that:<b><br><br><li>Transmissions described as live by some broadcasters may actually be delayed</li><br><li>The extent of any such delay may vary, depending on the set-up through which they are receiving pictures or data.</b><br><br> If this market is scheduled to go in-play, but due to unforeseen circumstances we are unable to offer the market in-play, then this market will be re-opened for the half-time interval and suspended again an hour after the scheduled kick-off time.  Whilst it is our intention to re-open this market for the half-time interval, in certain circumstances this may not always be possible.<br>","rulesHasDate":true,"suspendTime":"2016-11-09T19:30:00.000Z","turnInPlayEnabled":true,"wallet":"UK wallet"},"event":{"id":"28001473","name":"Brescia (W) v Fortuna Hjorring (W)","openDate":"2016-11-09T19:30:00.000Z","timezone":"Europe/London"},"eventType":{"id":"1","name":"Soccer"},"marketId":"1.128042089","marketName":"Match Odds","marketStartTime":"2016-11-09T19:30:00.000Z","runners":[{"handicap":0,"metadata":{"runnerId":"8882844"},"runnerName":"Brescia (W)","selectionId":8882844,"sortPriority":1},{"handicap":0,"metadata":{"runnerId":"5862298"},"runnerName":"Fortuna Hjorring (W)","selectionId":5862298,"sortPriority":2},{"handicap":0,"metadata":{"runnerId":"58805"},"runnerName":"The Draw","selectionId":58805,"sortPriority":3}],"totalMatched":0}]}
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 2 msecs, 993 micros, 579 nsecs
+
+08/Nov/16 09:00:37   ******** API-NG error ********
+
+ListMarketBook__Async failed.
+
+{"error":{"code":-32602,"message":"DSC-0018"},"id":4,"jsonrpc":"2.0"}
+
+********************************
+
+08/Nov/16 09:00:37   CBetFairExchange::ListMarketBook:
+037F72A8 
+
+
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 4 msecs, 94 micros, 756 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 4 msecs, 12 micros, 443 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 5 msecs, 732 micros, 737 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 5 msecs, 999 micros, 761 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 4 msecs, 156 micros, 983 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 5 msecs, 514 micros, 156 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 6 msecs, 987 micros, 906 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 3 msecs, 990 micros, 782 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 4 msecs, 998 micros, 225 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 5 msecs, 227 micros, 46 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 4 msecs, 821 micros, 391 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 4 msecs, 977 micros, 746 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 4 msecs, 359 micros, 23 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 10 msecs, 124 micros, 843 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 4 msecs, 302 micros, 310 nsecs
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 5 msecs, 186 micros, 481 nsecs
+
+08/Nov/16 09:00:37   BET_FAIR::CProductsCache::AddMarkets, exception cought: Key not found
+
+Json ignored:
+
+{"id":3,"jsonrpc":"2.0","result":[{"description":{"bettingType":"ODDS","bspMarket":false,"discountAllowed":true,"marketBaseRate":5,"marketTime":"2016-11-09T17:00:00.000Z","marketType":"MATCH_ODDS","persistenceEnabled":true,"regulator":"GIBRALTAR REGULATOR","rules":"<br><a href=\"http://www.stats.betradar.com/statistics/betfaircom/?language=en\" target=\"_blank\"><img src=\"http://content-cache.betfair.com/images/en_GB/mr_fg.gif\" title=\"Form Guide\" border=\"0\"></a><a href=\"http://www.livescore.betradar.com/?alias=betfair&language=en\" target=\"_blank\"><img src=\"http://content-cache.betfair.com/images/en_GB/mr_ls.gif\" title=\"Live Scores\" border=\"0\"></a><br><br><b>Market Information</b><br><br>For further information please see <a href=http://content.betfair.com/aboutus/content.asp?sWhichKey=Rules%20and%20Regulations#undefined.do style=color:0163ad; text-decoration: underline; target=_blank>Rules & Regs</a>.<br><br>Predict the result of this match. <b><font color=red> All bets apply to Full Time according to the match officials, plus any stoppage time.  Extra-time/penalty shoot-outs are not included.</b></font><br><br> <b><font color=blue>If this market is re-opened for In-Play betting, </b></font> unmatched bets will be cancelled at kick off and the market turned in play. The market will be suspended if it appears that a goal has been scored, a penalty will be given, or a red card will be shown. With the exception of bets for which the \"keep\" option has been selected, unmatched bets will be cancelled in the event of a confirmed goal or sending off. Please note that should our data feeds fail we may be unable to manage this game in-play. <br><br>Customers should be aware that:<b><br><br><li>Transmissions described as live by some broadcasters may actually be delayed</li><br><li>The extent of any such delay may vary, depending on the set-up through which they are receiving pictures or data.</b><br><br> If this market is scheduled to go in-play, but due to unforeseen circumstances we are unable to offer the market in-play, then this market will be re-opened for the half-time interval and suspended again an hour after the scheduled kick-off time.  Whilst it is our intention to re-open this market for the half-time interval, in certain circumstances this may not always be possible.<br>","rulesHasDate":true,"suspendTime":"2016-11-09T17:00:00.000Z","turnInPlayEnabled":true,"wallet":"UK wallet"},"event":{"id":"28007953","name":"Bayern Munich (W) v Rossiyanka (W)","openDate":"2016-11-09T17:00:00.000Z","timezone":"Europe/London"},"eventType":{"id":"1","name":"Soccer"},"marketId":"1.128134037","marketName":"Match Odds","marketStartTime":"2016-11-09T17:00:00.000Z","runners":[{"handicap":0,"metadata":{"runnerId":"10150223"},"runnerName":"Bayern Munich (W)","selectionId":10150223,"sortPriority":1},{"handicap":0,"metadata":{"runnerId":"5939754"},"runnerName":"Rossiyanka (W)","selectionId":5939754,"sortPriority":2},{"handicap":0,"metadata":{"runnerId":"58805"},"runnerName":"The Draw","selectionId":58805,"sortPriority":3}],"totalMatched":0}]}
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 3 msecs, 359 micros, 456 nsecs
+
+08/Nov/16 09:00:37   ******** API-NG error ********
+
+ListMarketBook__Async failed.
+
+{"error":{"code":-32602,"message":"DSC-0018"},"id":4,"jsonrpc":"2.0"}
+
+********************************
+
+08/Nov/16 09:00:37   CBetFairExchange::ListMarketBook:
+047A6E18 
+
+
+
+08/Nov/16 09:00:37   BET_FAIR::CProductsCache::AddMarkets, exception cought: Key not found
+
+Json ignored:
+
+{"id":3,"jsonrpc":"2.0","result":[{"description":{"bettingType":"ODDS","bspMarket":false,"discountAllowed":true,"marketBaseRate":5,"marketTime":"2016-11-09T17:15:00.000Z","marketType":"MATCH_ODDS","persistenceEnabled":true,"regulator":"GIBRALTAR REGULATOR","rules":"<br><a href=\"http://www.stats.betradar.com/statistics/betfaircom/?language=en\" target=\"_blank\"><img src=\"http://content-cache.betfair.com/images/en_GB/mr_fg.gif\" title=\"Form Guide\" border=\"0\"></a><a href=\"http://www.livescore.betradar.com/?alias=betfair&language=en\" target=\"_blank\"><img src=\"http://content-cache.betfair.com/images/en_GB/mr_ls.gif\" title=\"Live Scores\" border=\"0\"></a><br><br><b>Market Information</b><br><br>For further information please see <a href=http://content.betfair.com/aboutus/content.asp?sWhichKey=Rules%20and%20Regulations#undefined.do style=color:0163ad; text-decoration: underline; target=_blank>Rules & Regs</a>.<br><br>Predict the result of this match. <b><font color=red> All bets apply to Full Time according to the match officials, plus any stoppage time.  Extra-time/penalty shoot-outs are not included.</b></font><br><br> <b><font color=blue>If this market is re-opened for In-Play betting, </b></font> unmatched bets will be cancelled at kick off and the market turned in play. The market will be suspended if it appears that a goal has been scored, a penalty will be given, or a red card will be shown. With the exception of bets for which the \"keep\" option has been selected, unmatched bets will be cancelled in the event of a confirmed goal or sending off. Please note that should our data feeds fail we may be unable to manage this game in-play. <br><br>Customers should be aware that:<b><br><br><li>Transmissions described as live by some broadcasters may actually be delayed</li><br><li>The extent of any such delay may vary, depending on the set-up through which they are receiving pictures or data.</b><br><br> If this market is scheduled to go in-play, but due to unforeseen circumstances we are unable to offer the market in-play, then this market will be re-opened for the half-time interval and suspended again an hour after the scheduled kick-off time.  Whilst it is our intention to re-open this market for the half-time interval, in certain circumstances this may not always be possible.<br>","rulesHasDate":true,"suspendTime":"2016-11-09T17:15:00.000Z","turnInPlayEnabled":true,"wallet":"UK wallet"},"event":{"id":"28007963","name":"Lyon (W) v FC Zurich (W)","openDate":"2016-11-09T17:15:00.000Z","timezone":"Europe/London"},"eventType":{"id":"1","name":"Soccer"},"marketId":"1.128134154","marketName":"Match Odds","marketStartTime":"2016-11-09T17:15:00.000Z","runners":[{"handicap":0,"metadata":{"runnerId":"3775957"},"runnerName":"Lyon (W)","selectionId":3775957,"sortPriority":1},{"handicap":0,"metadata":{"runnerId":"6571271"},"runnerName":"FC Zurich (W)","selectionId":6571271,"sortPriority":2},{"handicap":0,"metadata":{"runnerId":"58805"},"runnerName":"The Draw","selectionId":58805,"sortPriority":3}],"totalMatched":0}]}
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 4 msecs, 273 micros, 165 nsecs
+
+08/Nov/16 09:00:37   ******** API-NG error ********
+
+ListMarketBook__Async failed.
+
+{"error":{"code":-32602,"message":"DSC-0018"},"id":4,"jsonrpc":"2.0"}
+
+********************************
+
+08/Nov/16 09:00:37   CBetFairExchange::ListMarketBook:
+037F72A8 
+
+
+
+08/Nov/16 09:00:37   BET_FAIR::CProductsCache::AddMarkets, exception cought: Key not found
+
+Json ignored:
+
+{"id":3,"jsonrpc":"2.0","result":[{"description":{"bettingType":"ODDS","bspMarket":false,"discountAllowed":true,"marketBaseRate":5,"marketTime":"2016-11-09T19:00:00.000Z","marketType":"MATCH_ODDS","persistenceEnabled":true,"regulator":"GIBRALTAR REGULATOR","rules":"<br><a href=\"http://www.stats.betradar.com/statistics/betfaircom/?language=en\" target=\"_blank\"><img src=\"http://content-cache.betfair.com/images/en_GB/mr_fg.gif\" title=\"Form Guide\" border=\"0\"></a><a href=\"http://www.livescore.betradar.com/?alias=betfair&language=en\" target=\"_blank\"><img src=\"http://content-cache.betfair.com/images/en_GB/mr_ls.gif\" title=\"Live Scores\" border=\"0\"></a><br><br><b>Market Information</b><br><br>For further information please see <a href=http://content.betfair.com/aboutus/content.asp?sWhichKey=Rules%20and%20Regulations#undefined.do style=color:0163ad; text-decoration: underline; target=_blank>Rules & Regs</a>.<br><br>Predict the result of this match. <b><font color=red> All bets apply to Full Time according to the match officials, plus any stoppage time.  Extra-time/penalty shoot-outs are not included.</b></font><br><br> <b><font color=blue>If this market is re-opened for In-Play betting, </b></font> unmatched bets will be cancelled at kick off and the market turned in play. The market will be suspended if it appears that a goal has been scored, a penalty will be given, or a red card will be shown. With the exception of bets for which the \"keep\" option has been selected, unmatched bets will be cancelled in the event of a confirmed goal or sending off. Please note that should our data feeds fail we may be unable to manage this game in-play. <br><br>Customers should be aware that:<b><br><br><li>Transmissions described as live by some broadcasters may actually be delayed</li><br><li>The extent of any such delay may vary, depending on the set-up through which they are receiving pictures or data.</b><br><br> If this market is scheduled to go in-play, but due to unforeseen circumstances we are unable to offer the market in-play, then this market will be re-opened for the half-time interval and suspended again an hour after the scheduled kick-off time.  Whilst it is our intention to re-open this market for the half-time interval, in certain circumstances this may not always be possible.<br>","rulesHasDate":true,"suspendTime":"2016-11-09T19:00:00.000Z","turnInPlayEnabled":true,"wallet":"UK wallet"},"event":{"id":"28007964","name":"Man City (W) v Brondby (W)","openDate":"2016-11-09T19:00:00.000Z","timezone":"Europe/London"},"eventType":{"id":"1","name":"Soccer"},"marketId":"1.128134211","marketName":"Match Odds","marketStartTime":"2016-11-09T19:00:00.000Z","runners":[{"handicap":0,"metadata":{"runnerId":"8452468"},"runnerName":"Man City (W)","selectionId":8452468,"sortPriority":1},{"handicap":0,"metadata":{"runnerId":"5845296"},"runnerName":"Brondby (W)","selectionId":5845296,"sortPriority":2},{"handicap":0,"metadata":{"runnerId":"58805"},"runnerName":"The Draw","selectionId":58805,"sortPriority":3}],"totalMatched":0}]}
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 3 msecs, 59 micros, 744 nsecs
+
+08/Nov/16 09:00:37   ******** API-NG error ********
+
+ListMarketBook__Async failed.
+
+{"error":{"code":-32602,"message":"DSC-0018"},"id":4,"jsonrpc":"2.0"}
+
+********************************
+
+08/Nov/16 09:00:37   CBetFairExchange::ListMarketBook:
+047A6E18 
+
+
+
+08/Nov/16 09:00:37   BET_FAIR::CProductsCache::AddMarkets, exception cought: Key not found
+
+Json ignored:
+
+{"id":3,"jsonrpc":"2.0","result":[{"description":{"bettingType":"ODDS","bspMarket":false,"discountAllowed":true,"marketBaseRate":5,"marketTime":"2016-11-09T17:30:00.000Z","marketType":"MATCH_ODDS","persistenceEnabled":true,"regulator":"GIBRALTAR REGULATOR","rules":"<br><a href=\"http://www.stats.betradar.com/statistics/betfaircom/?language=en\" target=\"_blank\"><img src=\"http://content-cache.betfair.com/images/en_GB/mr_fg.gif\" title=\"Form Guide\" border=\"0\"></a><a href=\"http://www.livescore.betradar.com/?alias=betfair&language=en\" target=\"_blank\"><img src=\"http://content-cache.betfair.com/images/en_GB/mr_ls.gif\" title=\"Live Scores\" border=\"0\"></a><br><br><b>Market Information</b><br><br>For further information please see <a href=http://content.betfair.com/aboutus/content.asp?sWhichKey=Rules%20and%20Regulations#undefined.do style=color:0163ad; text-decoration: underline; target=_blank>Rules & Regs</a>.<br><br>Predict the result of this match. <b><font color=red> All bets apply to Full Time according to the match officials, plus any stoppage time.  Extra-time/penalty shoot-outs are not included.</b></font><br><br> <b><font color=blue>If this market is re-opened for In-Play betting, </b></font> unmatched bets will be cancelled at kick off and the market turned in play. The market will be suspended if it appears that a goal has been scored, a penalty will be given, or a red card will be shown. With the exception of bets for which the \"keep\" option has been selected, unmatched bets will be cancelled in the event of a confirmed goal or sending off. Please note that should our data feeds fail we may be unable to manage this game in-play. <br><br>Customers should be aware that:<b><br><br><li>Transmissions described as live by some broadcasters may actually be delayed</li><br><li>The extent of any such delay may vary, depending on the set-up through which they are receiving pictures or data.</b><br><br> If this market is scheduled to go in-play, but due to unforeseen circumstances we are unable to offer the market in-play, then this market will be re-opened for the half-time interval and suspended again an hour after the scheduled kick-off time.  Whilst it is our intention to re-open this market for the half-time interval, in certain circumstances this may not always be possible.<br>","rulesHasDate":true,"suspendTime":"2016-11-09T17:30:00.000Z","turnInPlayEnabled":true,"wallet":"UK wallet"},"event":{"id":"28007965","name":"Barcelona (W) v Twente (W)","openDate":"2016-11-09T17:30:00.000Z","timezone":"Europe/London"},"eventType":{"id":"1","name":"Soccer"},"marketId":"1.128134268","marketName":"Match Odds","marketStartTime":"2016-11-09T17:30:00.000Z","runners":[{"handicap":0,"metadata":{"runnerId":"5226501"},"runnerName":"Barcelona (W)","selectionId":5226501,"sortPriority":1},{"handicap":0,"metadata":{"runnerId":"5272256"},"runnerName":"Twente (W)","selectionId":5272256,"sortPriority":2},{"handicap":0,"metadata":{"runnerId":"58805"},"runnerName":"The Draw","selectionId":58805,"sortPriority":3}],"totalMatched":0}]}
+
+08/Nov/16 09:00:37   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 3 msecs, 455 micros, 947 nsecs
+
+08/Nov/16 09:00:37   ******** API-NG error ********
+
+ListMarketBook__Async failed.
+
+{"error":{"code":-32602,"message":"DSC-0018"},"id":4,"jsonrpc":"2.0"}
+
+********************************
+
+08/Nov/16 09:00:37   CBetFairExchange::ListMarketBook:
+037F72A8 
+
+
+
+08/Nov/16 09:00:39   A newer version of [ config_per_race.txt ] is found.
+
+Attempting to parse it and utilise new parameters.

@@ -1,0 +1,923 @@
+SP CONFIG CHANGELOG
+===================
+
+PLEASE WRITE BELOW:
+* THE DATE AND TIME THAT YOU MADE THE CHANGE, AND YOUR NAME.
+* WHY YOU CHANGED THE CONFIG.
+* THE CHANGES THAT YOU MADE.
+
+##############################################################################
+
+2016-11-04 12:20 Nick
+
+* GB and US turnover are too low.
+* GB:
+  * Double up the barriers.
+  * Keep Bernard's 5% lay first-margin.
+  * Increase the back barrier from 7% to 8% because that was where we lost
+    lots of money last time.
+  * The margin step is 1% because turnover is very low for high margins.
+* US:
+  * Halve the number of barriers to 5 but increase the risk per barrier by
+    only 50% to £30. I don't want the barriers to look too appealing.
+  * Decrease the margins from 10% to 8%. Turnover has been very low for
+    both back and lay.
+
+GB
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   400   400    700     5    5       1       2      4      10      30
+SP2   400   400    700     5    5       1       2      4      10      30
+SP3   400   400    700     5    5       1       2      4      10      30
+SP4   400   400    700     5    5       1       2      4      10      30
+
+US
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1    30    30    700     5    5       1       5      4      10      30
+SP2    30    30    700     5    5       1       5      4      10      30
+SP3    30    30    700     5    5       1       5      4      10      30
+SP4    30    30    700     5    5       1       5      4      10      30
+
+margins.txt
+===========
+Price L0 B0  L1 B1  L2 B2  L3 B3  L4 B4  L5 B5  L6 B6  L7 B7  L8 B8
+1.01   3  3   4  4   5  8   6  6   7  7   8  8  10 10  12 12  14 12
+
+##############################################################################
+
+2016-11-03 17:00 Nick
+
+* Smooth out the FR and ZA barriers by spreading £1k risk over 5 barriers
+  instead of 2 barriers. 
+
+FR
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   200   200    700     5    5       2       6      4      10      30
+SP2   200   200    700     5    5       2       6      4      10      30
+SP3   200   200    700     5    5       2       6      4      10      30
+SP4   200   200    700     5    5       2       6      4      10      30
+
+ZA
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   200   200    700     5    5       2       6      4      10      30
+SP2   200   200    700     5    5       2       6      4      10      30
+SP3   200   200    700     5    5       2       6      4      10      30
+SP4   200   200    700     5    5       2       6      4      10      30
+
+##############################################################################
+
+2016-11-03 16:30 Nick
+
+* The first GB margin at 3% is caught too easily by market fluctuations.
+  Increase the margin to 6% (margin index 3).
+
+GB
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   200   200    700    10   10       1       3      4      10      30
+SP2   200   200    700    10   10       1       3      4      10      30
+SP3   200   200    700    10   10       1       3      4      10      30
+SP4   200   200    700    10   10       1       3      4      10      30
+
+##############################################################################
+
+2016-11-03 10:15 Nick
+
+* Smooth out the BAGS barriers some more by increasing the number of barriers
+  from 4 to 5.
+
+Greyhounds
+==========       back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   200   200    700     5    5       2       5      4      10      30
+SP2   200   200    700     5    5       2       5      4      10      30
+SP3   200   200    700     5    5       2       5      4      10      30
+SP4   200   200    700     5    5       2       5      4      10      30
+
+##############################################################################
+
+2016-11-01 13:48 Nick
+
+* I have seen some evidence of manipulation of the price against us in BAGS,
+  similar to what I saw with Australia greyhounds. I will divide the risk among
+  more barriers.
+  * Each mini-barrier is a less-tempting target for poachers (and bots).
+  * Better prices.
+  * Multiply by 2: n back, n lay.
+  * Divide by 2: back risk, lay risk, margin step.
+  * Divide by 4: accum risk limit, window risk limit.
+
+Greyhounds
+==========       back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   250   250    700     4    4       3       5      5      13      30
+SP2   250   250    700     4    4       3       5      5      13      30
+SP3   250   250    700     4    4       3       5      5      13      30
+SP4   250   250    700     4    4       3       5      5      13      30
+
+##############################################################################
+
+2016-10-30 10:40 Nick
+
+* GB turnover has been low. Decrease the first margins to 3% (margin index 0).
+  The barriers will be every 1% from 3% to 12%.
+
+GB
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   200   200    700    10   10       1       0      4      10      30
+SP2   200   200    700    10   10       1       0      4      10      30
+SP3   200   200    700    10   10       1       0      4      10      30
+SP4   200   200    700    10   10       1       0      4      10      30
+
+##############################################################################
+
+2016-10-26 14:00 Nick
+
+* Experiment on GB and US: Split each barrier into 5 small barriers.
+  * Each mini-barrier is a less-tempting target for poachers (and bots).
+  * Better prices.
+  * Divide by 5: back risk, lay risk, margin step, accum risk limit,
+    window risk limit.
+  * Multiply by 5: n back, n lay.
+
+GB
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   200   200    700    10   10       1       2      4      10      30
+SP2   200   200    700    10   10       1       2      4      10      30
+SP3   200   200    700    10   10       1       2      4      10      30
+SP4   200   200    700    10   10       1       2      4      10      30
+
+US
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1    20    20    700    10   10       1       6      4      10      30
+SP2    20    20    700    10   10       1       6      4      10      30
+SP3    20    20    700    10   10       1       6      4      10      30
+SP4    20    20    700    10   10       1       6      4      10      30
+
+##############################################################################
+
+2016-10-25 15:20 Nick
+
+* Change GB and US configs, to hopefully stop losing money.
+  * Reduce US back risk to data-collection £10. Increase lay risk to £200.
+    Increase the margin to 12%.
+  * I have wanted to increase the GB margins to 12% for a long time.
+    2 barriers on each side.  
+
+GB
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1  1000  1000    700     2    2       5       7     20      50      30
+SP2  1000  1000    700     2    2       5       7     20      50      30
+SP3  1000  1000    700     2    2       5       7     20      50      30
+SP4  1000  1000    700     2    2       5       7     20      50      30
+
+US
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1    10   200    700     2    2       5       7     20      50      30
+SP2    10   200    700     2    2       5       7     20      50      30
+SP3    10   200    700     2    2       5       7     20      50      30
+SP4    10   200    700     2    2       5       7     20      50      30
+
+##############################################################################
+
+2016-10-25 09:00 Nick
+
+* Increase FR and ZA Win back and lay risk from £100 to £500.
+
+FR
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   500   500    700     2    2       5       6     20      50      30
+SP2   500   500    700     2    2       5       6     20      50      30
+SP3   500   500    700     2    2       5       6     20      50      30
+SP4   500   500    700     2    2       5       6     20      50      30
+
+ZA
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   500   500    700     2    2       5       6     20      50      30
+SP2   500   500    700     2    2       5       6     20      50      30
+SP3   500   500    700     2    2       5       6     20      50      30
+SP4   500   500    700     2    2       5       6     20      50      30
+
+##############################################################################
+
+2016-10-24 12:52 Nick
+
+* Increase BAGS Win back and lay risk from £100 to £500.
+  * The barriers in the Win market were limited to £100, rather than being
+    limited by the accumulative and window risk limits.
+  * The barriers in the Place market were limited to a few £ by the
+    accumulative and window risk limits, so I haven't increased the Place risk.
+
+Greyhounds
+==========       back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   500   500    700     2    2       5       5     20      50      30
+SP2   100    50    700     2    2       5       5     20      50      30
+SP3   100    50    700     2    2       5       5     20      50      30
+SP4   100    50    700     2    2       5       5     20      50      30
+
+##############################################################################
+
+2016-10-24 09:20 Nick
+
+* New build: Do not close positions (that were opened before the off) with a 
+  MOC bet.
+* Config changes:
+  * GB and IE (to have the same risk limits as all the others):
+    * Accumulative risk limit: 20%.
+	* Window risk limit: 50%, 30 seconds.
+  * FR, ZA, Premier League, Champions League:
+    * Increase back and lay risk from £10 to £100.
+
+GB
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1  1000  1000    700     1    2       5       2     20      50      30
+SP2  1000  1000    700     3    2       5       2     20      50      30
+SP3  1000  1000    700     3    2       5       2     20      50      30
+SP4  1000  1000    700     3    2       5       2     20      50      30
+
+IE
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1  1500  1500    700     2    2       5       5     20      50      30
+SP2   500   500    700     2    2       5       6     20      50      30
+SP3   500   500    700     2    2       5       6     20      50      30
+SP4   500   500    700     2    2       5       6     20      50      30
+
+FR
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   100   100    700     2    2       5       6     20      50      30
+SP2   100   100    700     2    2       5       6     20      50      30
+SP3   100   100    700     2    2       5       6     20      50      30
+SP4   100   100    700     2    2       5       6     20      50      30
+
+ZA
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   100   100    700     2    2       5       6     20      50      30
+SP2   100   100    700     2    2       5       6     20      50      30
+SP3   100   100    700     2    2       5       6     20      50      30
+SP4   100   100    700     2    2       5       6     20      50      30
+
+English Premier League
+================ back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   100   100    700     2    2       5       3     20      50      30
+
+UEFA Champions League
+================ back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   100   100    700     2    2       5       3     20      50      30
+
+##############################################################################
+
+2016-10-21 09:00 Nick
+
+* New bot (to be more like Australian horse racing):
+  * Applies the accumulative and window risk limits to all countries and 
+    sports.
+  * Does not round stakes < £2 up to £2 for all countries and sports.
+* Config changes:
+  * GB and IE:
+    * Accumulative risk limit: 10,000%.
+	* Window risk limit: 10,000%, 30 seconds.
+  * All others (to be the same as for Australian horse racing): 
+    * Accumulative risk limit: 20%.
+	* Window risk limit: 50%, 30 seconds.
+
+GB
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1  1000  1000    700     1    2       5       2    10k     10k      30
+SP2  1000  1000    700     3    2       5       2    10k     10k      30
+SP3  1000  1000    700     3    2       5       2    10k     10k      30
+SP4  1000  1000    700     3    2       5       2    10k     10k      30
+
+IE
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1  1500  1500    700     2    2       5       5    10k     10k      30
+SP2   500   500    700     2    2       5       6    10k     10k      30
+SP3   500   500    700     2    2       5       6    10k     10k      30
+SP4   500   500    700     2    2       5       6    10k     10k      30
+
+FR
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1    10    10    700     2    2       5       6     20      50      30
+SP2    10    10    700     2    2       5       6     20      50      30
+SP3    10    10    700     2    2       5       6     20      50      30
+SP4    10    10    700     2    2       5       6     20      50      30
+
+ZA
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1    10    10    700     2    2       5       6     20      50      30
+SP2    10    10    700     2    2       5       6     20      50      30
+SP3    10    10    700     2    2       5       6     20      50      30
+SP4    10    10    700     2    2       5       6     20      50      30
+
+US
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   100   100    700     2    2       5       6     20      50      30
+SP2   100   100    700     2    2       5       6     20      50      30
+SP3   100   100    700     2    2       5       6     20      50      30
+SP4   100   100    700     2    2       5       6     20      50      30
+
+Greyhounds
+==========       back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   100   100    700     2    2       5       5     20      50      30
+SP2   100    50    700     2    2       5       5     20      50      30
+SP3   100    50    700     2    2       5       5     20      50      30
+SP4   100    50    700     2    2       5       5     20      50      30
+
+English Premier League
+================ back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1    10    10    700     2    2       5       3     20      50      30
+
+UEFA Champions League
+================ back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1    10    10    700     2    2       5       3     20      50      30
+
+margins.txt
+===========
+Price L0 B0  L1 B1  L2 B2  L3 B3  L4 B4  L5 B5  L6 B6  L7 B7  L8 B8
+1.01  3  3   4  4   5  7   6  6   7  7   8  8   10 10  12 12  14 12
+
+##############################################################################
+
+2016-10-17 14:00 Nick
+
+* The reason that USA turnover decreased dramatically when I replaced Bruno's
+  bot with my first build (see 2016-09-07 12:52) was because I had not merged
+  Bruno's margins.txt parser into my code. The old parser used a default
+  margin of 50% for any marginIndex >= 8. The marginIndex was 8 for USA win
+  markets. (USA place markets do not have BSP.)
+
+##############################################################################
+
+2016-10-14 13:58 Nick
+
+* New bot that has Bruno's margins.txt parser. Without Bruno's parser, the
+  bot cannot read Bruno's margins.txt file, and all the margins are zero. This
+  was difficult to detect because the margins are overwritten if they are less
+  than the percentage that corresponds to the 3rd market-depth price.
+* I intended to swap the bots two days ago, when I increased the risk values,
+  but I did not do it.
+
+##############################################################################
+
+2016-10-12 15:40 Nick
+
+* New bot that has Bruno's margins.txt parser. Without Bruno's parser, the
+  bot cannot read Bruno's margins.txt file, and all the margins are zero. This
+  was difficult to detect because the margins are overwritten if they are less
+  than the percentage that corresponds to the 3rd market-depth price.
+  * CORRECTION 2016-10-14 13:58 Nick - I forgot to swap the bots.
+* Increase GB and IE risk back to 100% because my bot should behave the same
+  as Bruno's bot now.
+
+GB
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1     1000    1000     1    2          5           2
+SP2     1000    1000     3    2          5           2
+SP3     1000    1000     3    2          5           2
+SP4     1000    1000     3    2          5           2
+
+IE
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1     1500    1500     2    2          5           5
+SP2      500     500     2    2          5           6
+SP3      500     500     2    2          5           6
+SP4      500     500     2    2          5           6
+
+##############################################################################
+
+2016-10-10 18:00 Nick
+
+* New bot that closes positions at SP using the fill price instead of the
+  fair price. The bot will start the next time that the old bot stops
+  (probably 9am tomorrow).
+
+##############################################################################
+
+2016-10-03 22:35 Nick
+
+* SP turnover was very high over the weekend. I think the problem might be a
+  difference in how the old and new bots compute the margins. I am decreasing
+  the GB and IE risk levels again to 1/10.
+
+GB
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1      100     100     1    2          5           2
+SP2      100     100     3    2          5           2
+SP3      100     100     3    2          5           2
+SP4      100     100     3    2          5           2
+
+IE
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1      150     150     2    2          5           5
+SP2       50      50     2    2          5           6
+SP3       50      50     2    2          5           6
+SP4       50      50     2    2          5           6
+
+##############################################################################
+
+2016-10-01 12:35 Nick
+
+* I replaced my previous bot with a new build that closes positions with a MOC
+  bet:
+  * The new build did well in a test account overnight. Therefore I restored
+    GB and IE config to full risk.
+  * The new build does not lay each runner with a MOC bet for data collection.
+    (This is now done by a separate robot in magicianltd01.) Therefore I
+	subtracted 1 lay barrier from each config.
+
+GB
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1     1000    1000     1    2          5           2
+SP2     1000    1000     3    2          5           2
+SP3     1000    1000     3    2          5           2
+SP4     1000    1000     3    2          5           2
+
+IE
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1     1500    1500     2    2          5           5
+SP2      500     500     2    2          5           6
+SP3      500     500     2    2          5           6
+SP4      500     500     2    2          5           6
+
+FR
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1       10      10     2    2          5           6
+SP2       10      10     2    2          5           6
+SP3       10      10     2    2          5           6
+SP4       10      10     2    2          5           6
+
+ZA
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1       10      10     2    2          5           6
+SP2       10      10     2    2          5           6
+SP3       10      10     2    2          5           6
+SP4       10      10     2    2          5           6
+
+US
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1      100     100     2    2          5           6
+SP2      100     100     2    2          5           6
+SP3      100     100     2    2          5           6
+SP4      100     100     2    2          5           6
+
+Greyhounds
+==========
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1      100     100     2    2          5           5
+SP2      100      50     2    2          5           5
+SP3      100      50     2    2          5           5
+SP4      100      50     2    2          5           5
+
+English Premier League
+======================
+    backRisk layRisk nBack nLay marginStep marginIndex
+SPF       10      10     2    2          5           3
+
+UEFA Champions League
+=====================
+    backRisk layRisk nBack nLay marginStep marginIndex
+SPF       10      10     2    2          5           3
+
+##############################################################################
+
+2016-09-28 14:00 Nick
+
+* I have a suspicion that the difference in behaviour of Bruno's bots and my
+  bots is because of the margin calculations. I will restore USA to its previous
+  risk because I had already updated those margins for my bot.
+
+US
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1      100     100     2    3          5           6
+SP2      100     100     2    3          5           6
+SP3      100     100     2    3          5           6
+SP4      100     100     2    3          5           6
+
+##############################################################################
+
+2016-09-25 07:30 Nick
+
+* We are losing money in all horse-racing countries where we have risk greater
+  than data-collection levels. I have reduced all horse-racing risk to <= 15.
+
+GB
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1       10      10     1    3          5           2
+SP2       10      10     3    3          5           2
+SP3       10      10     3    3          5           2
+SP4       10      10     3    3          5           2
+
+IE
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1       15      15     2    3          5           5
+SP2        5       5     2    3          5           6
+SP3        5       5     2    3          5           6
+SP4        5       5     2    3          5           6
+
+US
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1       10      10     2    3          5           6
+SP2       10      10     2    3          5           6
+SP3       10      10     2    3          5           6
+SP4       10      10     2    3          5           6
+
+##############################################################################
+
+2016-09-24 12:15 Nick
+
+* There is a problem with the bot and we are losing money on high-risk bets in
+  illiquid markets. I have reduced the IRE risk tenfold until we can fix the 
+  problem.
+
+IE
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1      150     150     2    3          5           5
+SP2       50      50     2    3          5           6
+SP3       50      50     2    3          5           6
+SP4       50      50     2    3          5           6
+
+##############################################################################
+
+2016-09-22 08:35 Nick
+
+* Add IE to the greyhounds EventTree, just in case:
+  'EventTree "Greyhound Racing" GB IE'.
+* Change greyhounds "Close position mode enabled" to "no" for consistency with
+  the other configuration sections.
+
+##############################################################################
+
+2016-09-21 13:00 Nick
+
+* Change
+  'EventTree "Greyhound Racing" All' to 'EventTree "Greyhound Racing" GB'
+  so the bot will request greyhound markets for GB and not for AU too.
+* Change 'RobotParameters All' to 'RobotParameters Greyhounds'. This only
+  renames the dummy token to make its meaning clearer.
+
+##############################################################################
+
+2016-09-13 12:50 Nick
+
+* I increased the margins for Ireland two days ago without plotting the PnL of
+  the net-prize bins. The plots suggest that Ireland Win would make more money
+  at higher risk levels and at the old 8% margins. Therefore I'm decreasing
+  the Win margin back to 8% and increasing the Win risk to £1500 per barrier.
+
+IE
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1     1500    1500     2    3          5           5
+SP2      500     500     2    3          5           6
+SP3      500     500     2    3          5           6
+SP4      500     500     2    3          5           6
+
+##############################################################################
+
+2016-09-11 09:45 Nick
+
+* Ireland has been consistently losing money in all markets for the past few
+  weeks, so I'm putting the margins back up to 10% from 8%.
+
+IE
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1     1000    1000     2    3          5           6
+SP2      500     500     2    3          5           6
+SP3      500     500     2    3          5           6
+SP4      500     500     2    3          5           6
+
+##############################################################################
+
+2016-09-10 09:36 Nick
+
+* Add Soccer "English Premier League" and "UEFA Champions League". The margins
+  are 6% because Bernard says that 10% margins won't get matched.
+
+English Premier League
+======================
+    backRisk layRisk nBack nLay marginStep marginIndex
+SPF       10      10     2    3          5           3
+
+UEFA Champions League
+=====================
+    backRisk layRisk nBack nLay marginStep marginIndex
+SPF       10      10     2    3          5           3
+
+##############################################################################
+
+2016-09-07 12:52 Nick
+
+* USA turnover has been much less since I replaced Bruno's bot with my bot on
+  2016-08-31. I do not know the cause, but I am hopeful that USA's behaviour
+  will now make more sense. I am decreasing the margins from 14% lay and 12%
+  back to 10% for both.
+
+US
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1      100     100     2    3          5           6
+SP2      100     100     2    3          5           6
+SP3      100     100     2    3          5           6
+SP4      100     100     2    3          5           6
+  
+##############################################################################
+
+2016-08-31 17:35 Nick
+
+* Nick merged two of Bruno's code changes into Nick's code base and built a
+  new bot for the SP project:
+  * The fix that stops the bot sending too many market IDs in its requests
+    for matched bets. (Bruno had shipped this fix at 2016-07-28 16:30.)
+  * The feature that stops the bot betting at odds >= 10.0 on GB horse races.
+    (Bruno had shipped this feature at 2016-06-29 12:14 but with a bug that
+	applied the rule to all GB events, including BAGS.)
+* Bernard wants betting on French and South African horse races that offer the
+  Betfair starting price. Nick starts them betting at £10 risk, 10% margins,
+  2 back barriers and 2 lay barriers (+ 1 lay MOC bet) per runner.
+
+FR
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1       10      10     2    3          5           6
+SP2       10      10     2    3          5           6
+SP3       10      10     2    3          5           6
+SP4       10      10     2    3          5           6
+
+ZA
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1       10      10     2    3          5           6
+SP2       10      10     2    3          5           6
+SP3       10      10     2    3          5           6
+SP4       10      10     2    3          5           6
+
+##############################################################################
+
+2016-08-22 13:40 Nick
+
+* Nick changes US "Close position mode enabled" from "yes" to "no" for SP1 to
+  SP4.
+  The SP bot seems to behave incorrectly in US markets: Some barriers are not
+  updated despite changes in the market prices. The "Close position mode 
+  enabled" config should be ignored by SP bot, but I have seen other examples 
+  of config parameters being reused for other purposes without updating the 
+  name, e.g. "Kelly bank" means "Lay risk". Therefore I am changing the values
+  of "Close position mode enabled" for US to be the same as those for GB and
+  IRE (but All is still "yes").
+
+##############################################################################
+
+2016-07-21 17:55 Bruno
+
+* Updated executable to BOTS_SP_2016-07-21.exe which generates a list of
+  matched orders in file Logs\_fills.txt. The format of each line is identical
+  to that of the entries in the .translog files except that the robot type,
+  e.g. "SP3," is missing from the beginning of the line.
+
+##############################################################################
+
+2016-07-14 14:20 Nick
+
+* Bernard wants GB values similar to those from Jan 2015 (a profitable time):
+  * GB has been very volatile and made no money over the past 12 months.
+  * Decrease win and place margins to 5% lay, 7% back.
+  * Change risk levels and the number of barriers too.
+* Nick increases US win lay margin from 12% to 14%.
+  * US PnL has been flat since win back and lay margins were increased from
+    10% to 12% on 2016-07-01.
+  * US win back is now making money, but US win lay is still losing money.
+  * Leave risk values unchanged.
+
+Margins
+=======
+The first line in margins.txt (indexed for clarity) is:
+0:  3  3
+1:  4  4
+2:  5  7
+3:  6  6
+4:  7  7
+5:  8  8
+6: 10 10
+7: 12 12
+8: 14 12
+
+GB
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1     1000    1000     1    3          5           2
+SP2     1000    1000     3    3          5           2
+SP3     1000    1000     3    3          5           2
+SP4     1000    1000     3    3          5           2
+
+IE
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1     1000    1000     2    3          5           5
+SP2      500     500     2    3          5           5
+SP3      500     500     2    3          5           5
+SP4      500     500     2    3          5           5
+
+US
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1      100     100     2    3          5           8
+SP2      100     100     2    3          5           7
+SP3      100     100     2    3          5           7
+SP4      100     100     2    3          5           7
+
+All
+===
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1      100     100     2    3          5           5
+SP2      100      50     2    3          5           5
+SP3      100      50     2    3          5           5
+SP4      100      50     2    3          5           5
+
+##############################################################################
+
+2016-07-13 18:00 Bruno
+
+* Updated executable to BOTS_SP_2016-07-13.exe to allow for a larger number of
+  columns in the margins.txt configuration file.
+
+##############################################################################
+
+2016-07-07 18:15 Bruno
+
+* Updated executable to BOTS_SP_2016-07-07.exe to see whether we can get Place
+  orders in the US market.
+
+##############################################################################
+
+2016-07-01 16:30 Nick
+
+* Update config after Bernard and Nick studied the volume, turnover, PnL and 
+  RoI of the previous configs (from 2015-04 to 2016-06).
+  * GB: Bernard's risk values, with the same 10% margins.
+  * IE: Nick decreases margins from 10% to 8% to get more business, and keep
+    risk low in case we lose money at the lower margins.
+  * US: Nick increases margins from 10% to 12% because volumes are high and
+    we are losing money.
+  * ALL (BAGS): Nick decreases margins from 10% to 8% to get more business,
+    and keep risk low (especially place-lay) in case we lose money at the 
+    lower margins.
+
+GB
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1      500    1000     2    3          5           6
+SP2     2000    1200     2    3          5           6
+SP3     2000    1200     2    3          5           6
+SP4     2000    1200     2    3          5           6
+
+IE
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1     1000    1000     2    3          5           5
+SP2      500     500     2    3          5           5
+SP3      500     500     2    3          5           5
+SP4      500     500     2    3          5           5
+
+US
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1      100     100     2    3          5           7
+SP2      100     100     2    3          5           7
+SP3      100     100     2    3          5           7
+SP4      100     100     2    3          5           7
+
+All
+===
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1      100     100     2    3          5           5
+SP2      100      50     2    3          5           5
+SP3      100      50     2    3          5           5
+SP4      100      50     2    3          5           5
+
+##############################################################################
+
+2016-06-30 17:14 Bruno
+
+* IE Win Back risk changed from 0 to 69 to see if this will allow Win Lay bets
+  to be placed, since currently they appear not to be.
+
+##############################################################################
+
+2016-06-29 13:00 Nick
+
+* Start the CHANGELOG.
+
+Margins
+=======
+The first line in margins.txt is:
+  3 3, 4 4, 5 5, 6 6, 7 7, 8 8, 10 10, 12 12
+
+GB
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1      400     400     2    3          5           6
+SP2     2500     150     2    3          5           6
+SP3     2500     150     2    3          5           6
+SP4     2500     150     2    3          5           6
+
+IE
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1        0    7000     2    3          5           6
+SP2      100    1500     2    3          5           6
+SP3      100    1500     2    3          5           6
+SP4      100    1500     2    3          5           6
+
+US
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1      100     100     2    3          5           6
+SP2      100     100     2    3          5           6
+SP3      100     100     2    3          5           6
+SP4      100     100     2    3          5           6
+
+All
+===
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1       50     250     2    3          5           6
+SP2      250     150     2    3          5           6
+SP3      250     150     2    3          5           6
+SP4      250     150     2    3          5           6
+
+##############################################################################
+
+2016-06-29 12:14 Bruno
+
+* BOTS_SP.exe replaced.
+  Orders are no longer placed for odds >= 10 in GB as such bets have been
+  found to reduce profit.
+
+##############################################################################

@@ -1,0 +1,41 @@
+
+
+22/Jul/17 19:21:25   CBetFairExchange::LoadCertificate, CertFindCertificateInStore failed for certificate subject [ API-NG ]
+
+Error [ 2148081668 ] - Cannot find object or property.
+
+
+22/Jul/17 19:21:25   BENCHMARK, CBetFairExchange::CancelBets__Async: 587 msecs, 757 micros, 912 nsecs
+
+22/Jul/17 19:21:25   ******** API-NG error ********
+
+CancelBets__Async failed.
+
+{"error":{"code":-32099,"data":{"APINGException":{"errorCode":"NO_SESSION","errorDetails":"","requestUUID":"prdang035-07181119-001658a5fb"},"exceptionname":"APINGException"},"message":"ANGX-0005"},"id":7,"jsonrpc":"2.0"}
+
+********************************
+
+22/Jul/17 19:21:25   CBetFairExchange::LoadCertificate, CertFindCertificateInStore failed for certificate subject [ API-NG ]
+
+Error [ 2148081668 ] - Cannot find object or property.
+
+
+22/Jul/17 19:21:25   CBetDaqSystem::GetBetFairMarkets, collecting markets from the following events tree: Horse Racing, AU, NZ
+
+22/Jul/17 19:21:25   ******** API-NG error ********
+
+ListEventTypes__Async failed.
+
+{"error":{"code":-32099,"data":{"APINGException":{"errorCode":"INVALID_APP_KEY","errorDetails":"","requestUUID":"prdang034-07181127-0016214208"},"exceptionname":"APINGException"},"message":"ANGX-0007"},"id":1,"jsonrpc":"2.0"}
+
+********************************
+
+22/Jul/17 19:21:26   CBetDaqSystem::GetBetFairMarkets, no markets found for: Horse Racing, AU, NZ
+
+22/Jul/17 19:21:28   A newer version of [ config_per_race.txt ] is found.
+
+Attempting to parse it and utilise new parameters.
+
+22/Jul/17 19:21:31   BetDaq system exits. Shuting down robots and pulling any existing orders.
+
+22/Jul/17 19:21:31   CBetDaqSystem::RobotManagerThreadJob, Received signal to exit. Exiting.

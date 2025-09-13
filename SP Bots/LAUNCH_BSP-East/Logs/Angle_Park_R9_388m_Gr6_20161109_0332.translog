@@ -1,0 +1,30 @@
+GEN INFOTue Nov 08 22:55:29 2016
+
+ ------------------------------------------
+ m_exchange_id = 0
+ m_id = 28008372
+ m_name = AnPk (AUS) 9th Nov
+ m_parent_id = -12
+ ------------------------------------------
+ m_parent_event_id = 28008372
+ m_id = 1.128141448
+ m_name = R9 388m Gr6
+ m_start_time = 20161109_0332
+ ------------------------------------------
+ m_is_dog_racing, m_bspMarket, m_eachWayMarket, m_otherPlaceMarket, m_winMarket
+========================================================================
+GEN INFOWed Nov 09 01:05:07 2016
+
+ ------------------------------------------
+ m_exchange_id = 0
+ m_id = 28008372
+ m_name = AnPk (AUS) 9th Nov
+ m_parent_id = -5
+ ------------------------------------------
+ m_parent_event_id = 28008372
+ m_id = 1.128141448
+ m_name = R9 388m Gr6
+ m_start_time = 20161109_0332
+ ------------------------------------------
+ m_is_dog_racing, m_bspMarket, m_eachWayMarket, m_otherPlaceMarket, m_winMarket
+========================================================================

@@ -1,0 +1,180 @@
+
+
+08/Nov/16 00:59:50   CBetFairExchange::Login attempt[ 0 ] - The operation completed successfully.
+
+
+08/Nov/16 00:59:50   BENCHMARK, CBetFairExchange::CancelBets__Async: 22 msecs, 945 micros, 129 nsecs
+
+08/Nov/16 00:59:50   CBetDaqSystem::GetBetFairMarkets, collecting markets from the following events tree: Horse Racing, AU, NZ
+
+08/Nov/16 00:59:50   CProductsCache::UpdateEventDetails, venue present but parent event name [ APrk (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Albion Park (8th November 2016) ]
+
+08/Nov/16 00:59:50   CProductsCache::UpdateEventDetails, venue present but parent event name [ Kilm (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Kilmore (8th November 2016) ]
+
+08/Nov/16 00:59:50   CProductsCache::UpdateEventDetails, venue present but parent event name [ Mngl (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Menangle (8th November 2016) ]
+
+08/Nov/16 00:59:50   CProductsCache::UpdateEventDetails, venue present but parent event name [ Morn (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Mornington (8th November 2016) ]
+
+08/Nov/16 00:59:50   CProductsCache::UpdateEventDetails, venue present but parent event name [ Nort (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Northam (8th November 2016) ]
+
+08/Nov/16 00:59:50   CProductsCache::UpdateEventDetails, venue present but parent event name [ Quir (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Quirindi (8th November 2016) ]
+
+08/Nov/16 00:59:50   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 11 msecs, 12 micros, 953 nsecs
+
+08/Nov/16 00:59:51   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 11 msecs, 122 micros, 46 nsecs
+
+08/Nov/16 00:59:51   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 9 msecs, 750 micros, 695 nsecs
+
+08/Nov/16 00:59:51   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 10 msecs, 780 micros, 587 nsecs
+
+08/Nov/16 00:59:51   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 8 msecs, 774 micros, 759 nsecs
+
+08/Nov/16 00:59:51   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 10 msecs, 711 micros, 665 nsecs
+
+08/Nov/16 00:59:51   CProductsCache::UpdateEventDetails, venue present but parent event name [ APrk (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Albion Park (8th November 2016) ]
+
+08/Nov/16 00:59:51   CProductsCache::UpdateEventDetails, venue present but parent event name [ Kilm (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Kilmore (8th November 2016) ]
+
+08/Nov/16 00:59:51   CProductsCache::UpdateEventDetails, venue present but parent event name [ Mngl (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Menangle (8th November 2016) ]
+
+08/Nov/16 00:59:51   CProductsCache::UpdateEventDetails, venue present but parent event name [ Morn (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Mornington (8th November 2016) ]
+
+08/Nov/16 00:59:51   CProductsCache::UpdateEventDetails, venue present but parent event name [ Nort (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Northam (8th November 2016) ]
+
+08/Nov/16 00:59:51   CProductsCache::UpdateEventDetails, venue present but parent event name [ Quir (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Quirindi (8th November 2016) ]
+
+08/Nov/16 00:59:51   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 8 msecs, 669 micros, 997 nsecs
+
+08/Nov/16 00:59:51   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 7 msecs, 331 micros, 728 nsecs
+
+08/Nov/16 00:59:51   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 8 msecs, 541 micros, 212 nsecs
+
+08/Nov/16 00:59:51   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 12 msecs, 732 micros, 459 nsecs
+
+08/Nov/16 00:59:52   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 12 msecs, 411 micros, 479 nsecs
+
+08/Nov/16 00:59:52   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 9 msecs, 475 micros, 7 nsecs
+
+08/Nov/16 00:59:52   CProductsCache::UpdateEventDetails, venue present but parent event name [ Addi (NZL) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Addington (7th November 2016) ]
+
+08/Nov/16 00:59:52   CProductsCache::UpdateEventDetails, venue present but parent event name [ TeAw (NZL) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Te Awamutu (7th November 2016) ]
+
+08/Nov/16 00:59:52   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 11 msecs, 265 micros, 404 nsecs
+
+08/Nov/16 00:59:52   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 10 msecs, 616 micros, 749 nsecs
+
+08/Nov/16 00:59:52   CProductsCache::UpdateEventDetails, venue present but parent event name [ Addi (NZL) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Addington (7th November 2016) ]
+
+08/Nov/16 00:59:52   CProductsCache::UpdateEventDetails, venue present but parent event name [ TeAw (NZL) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Te Awamutu (7th November 2016) ]
+
+08/Nov/16 00:59:52   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 10 msecs, 420 micros, 617 nsecs
+
+08/Nov/16 00:59:52   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 7 msecs, 200 micros, 186 nsecs
+
+08/Nov/16 00:59:52   CBetDaqSystem::GetBetFairMarkets, collecting markets from the following events tree: Horse Racing, AU, NZCBetDaqSystem::GetBetFairMarkets, collecting markets from the following events tree: Greyhound Racing, AU, NZ
+
+08/Nov/16 00:59:52   CProductsCache::UpdateEventDetails, venue present but parent event name [ Lism (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Lismore (8th November 2016) ]
+
+08/Nov/16 00:59:52   CProductsCache::UpdateEventDetails, venue present but parent event name [ Ball (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Ballarat (8th November 2016) ]
+
+08/Nov/16 00:59:52   CProductsCache::UpdateEventDetails, venue present but parent event name [ AsPk (NZL) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Ascot Park (7th November 2016) ]
+
+08/Nov/16 00:59:52   CProductsCache::UpdateEventDetails, venue present but parent event name [ Wgul (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Warragul (8th November 2016) ]
+
+08/Nov/16 00:59:52   CProductsCache::UpdateEventDetails, venue present but parent event name [ Goul (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Goulburn (8th November 2016) ]
+
+08/Nov/16 00:59:52   CProductsCache::UpdateEventDetails, venue present but parent event name [ Geel (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Geelong (8th November 2016) ]
+
+08/Nov/16 00:59:52   CProductsCache::UpdateEventDetails, venue present but parent event name [ AnPk (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Angle Park (8th November 2016) ]
+
+08/Nov/16 00:59:52   CProductsCache::UpdateEventDetails, venue present but parent event name [ Gosf (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Gosford (8th November 2016) ]
+
+08/Nov/16 00:59:52   CProductsCache::UpdateEventDetails, venue present but parent event name [ Ipsw (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Ipswich (8th November 2016) ]
+
+08/Nov/16 00:59:52   CProductsCache::UpdateEventDetails, venue present but parent event name [ Town (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Townsville (8th November 2016) ]
+
+08/Nov/16 00:59:52   CProductsCache::UpdateEventDetails, venue present but parent event name [ Devn (AUS) 8th Nov ] contains parenthesis.
+
+Ignoring this event and not setting it as [ Devonport (8th November 2016) ]
+
+08/Nov/16 00:59:52   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 12 msecs, 595 micros, 796 nsecs
+
+08/Nov/16 00:59:52   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 8 msecs, 938 micros, 990 nsecs
+
+08/Nov/16 00:59:52   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 8 msecs, 661 micros, 333 nsecs
+
+08/Nov/16 00:59:52   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 7 msecs, 926 micros, 821 nsecs
+
+08/Nov/16 00:59:53   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 8 msecs, 753 micros, 491 nsecs
+
+08/Nov/16 00:59:53   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 10 msecs, 192 micros, 190 nsecs
+
+08/Nov/16 00:59:53   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 8 msecs, 907 micros, 483 nsecs
+
+08/Nov/16 00:59:53   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 8 msecs, 826 micros, 352 nsecs
+
+08/Nov/16 00:59:53   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 9 msecs, 879 micros, 87 nsecs
+
+08/Nov/16 00:59:53   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 8 msecs, 336 micros, 415 nsecs
+
+08/Nov/16 00:59:53   BENCHMARK, CBetFairExchange::ListMarketBook__Async: 6 msecs, 228 micros, 582 nsecs
+
+08/Nov/16 00:59:55   A newer version of [ config_per_race.txt ] is found.
+
+Attempting to parse it and utilise new parameters.
+
+08/Nov/16 01:00:20   BetDaq system exits. Shuting down robots and pulling any existing orders.
+
+08/Nov/16 01:00:20   CBetDaqSystem::RobotManagerThreadJob, Received signal to exit. Exiting.

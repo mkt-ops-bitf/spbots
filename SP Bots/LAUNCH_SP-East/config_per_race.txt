@@ -1,0 +1,2474 @@
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+ParentEvent    "Horse Racing"                                     7            -2
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+ParentEvent    "AU"                                              -3             7
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+ParentEvent    "NZ"                                              -4             7
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+ParentEvent    "Greyhound Racing"                              4339            -2
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+ParentEvent    "Greyhounds"                                      -5          4339
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+ParentEvent    "Greyhounds"                                      -6          4339
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "EFrm (AUS) 9th Nov"                         28008250            -3
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     2        2        5        7        1
+RiskParameters     SP1    500        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP2    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP3    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP4    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2              20            50            30              13             0             0
+BetfairTradedVolume      1            2              20            50            30              13             0             0
+BetfairTradedVolume      2            2              20            50            30              13             0             0
+BetfairTradedVolume      3            2              20            50            30              13             0             0
+BetfairTradedVolume      4            2              20            50            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "Asct (AUS) 9th Nov"                         28008265            -3
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     2        2        5        7        1
+RiskParameters     SP1    500        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP2    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP3    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP4    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2              20            50            30              13             0             0
+BetfairTradedVolume      1            2              20            50            30              13             0             0
+BetfairTradedVolume      2            2              20            50            30              13             0             0
+BetfairTradedVolume      3            2              20            50            30              13             0             0
+BetfairTradedVolume      4            2              20            50            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "Laun (AUS) 9th Nov"                         28008255            -3
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     2        2        5        7        1
+RiskParameters     SP1    500        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP2    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP3    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP4    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2              20            50            30              13             0             0
+BetfairTradedVolume      1            2              20            50            30              13             0             0
+BetfairTradedVolume      2            2              20            50            30              13             0             0
+BetfairTradedVolume      3            2              20            50            30              13             0             0
+BetfairTradedVolume      4            2              20            50            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "Bala (AUS) 9th Nov"                         28008254            -3
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     2        2        5        7        1
+RiskParameters     SP1    500        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP2    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP3    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP4    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2              20            50            30              13             0             0
+BetfairTradedVolume      1            2              20            50            30              13             0             0
+BetfairTradedVolume      2            2              20            50            30              13             0             0
+BetfairTradedVolume      3            2              20            50            30              13             0             0
+BetfairTradedVolume      4            2              20            50            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "Bath (AUS) 9th Nov"                         28008259            -3
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     2        2        5        7        1
+RiskParameters     SP1    500        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP2    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP3    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP4    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2              20            50            30              13             0             0
+BetfairTradedVolume      1            2              20            50            30              13             0             0
+BetfairTradedVolume      2            2              20            50            30              13             0             0
+BetfairTradedVolume      3            2              20            50            30              13             0             0
+BetfairTradedVolume      4            2              20            50            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "Redc (AUS) 9th Nov"                         28008258            -3
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     2        2        5        7        1
+RiskParameters     SP1    500        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP2    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP3    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP4    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2              20            50            30              13             0             0
+BetfairTradedVolume      1            2              20            50            30              13             0             0
+BetfairTradedVolume      2            2              20            50            30              13             0             0
+BetfairTradedVolume      3            2              20            50            30              13             0             0
+BetfairTradedVolume      4            2              20            50            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "Geel (AUS) 9th Nov"                         28008257            -3
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     2        2        5        7        1
+RiskParameters     SP1    500        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP2    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP3    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP4    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2              20            50            30              13             0             0
+BetfairTradedVolume      1            2              20            50            30              13             0             0
+BetfairTradedVolume      2            2              20            50            30              13             0             0
+BetfairTradedVolume      3            2              20            50            30              13             0             0
+BetfairTradedVolume      4            2              20            50            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "Cobr (AUS) 9th Nov"                         28008256            -3
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     2        2        5        7        1
+RiskParameters     SP1    500        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP2    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP3    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP4    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2              20            50            30              13             0             0
+BetfairTradedVolume      1            2              20            50            30              13             0             0
+BetfairTradedVolume      2            2              20            50            30              13             0             0
+BetfairTradedVolume      3            2              20            50            30              13             0             0
+BetfairTradedVolume      4            2              20            50            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "Bend (AUS) 9th Nov"                         28008245            -3
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     2        2        5        7        1
+RiskParameters     SP1    500        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP2    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP3    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP4    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2              20            50            30              13             0             0
+BetfairTradedVolume      1            2              20            50            30              13             0             0
+BetfairTradedVolume      2            2              20            50            30              13             0             0
+BetfairTradedVolume      3            2              20            50            30              13             0             0
+BetfairTradedVolume      4            2              20            50            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "Gosf (AUS) 9th Nov"                         28008244            -3
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     2        2        5        7        1
+RiskParameters     SP1    500        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP2    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP3    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+RiskParameters     SP4    600        50          700        3     No         20       15          Yes     1000     2        2        5        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2              20            50            30              13             0             0
+BetfairTradedVolume      1            2              20            50            30              13             0             0
+BetfairTradedVolume      2            2              20            50            30              13             0             0
+BetfairTradedVolume      3            2              20            50            30              13             0             0
+BetfairTradedVolume      4            2              20            50            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "Ricc (NZL) 9th Nov"                         28008271            -4
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     5        5        2        7        1
+RiskParameters     SP1    200        50          700        3     No         20       15          Yes      200     5        5        2        7        1
+RiskParameters     SP2    200        50          700        3     No         20       15          Yes      200     5        5        2        7        1
+RiskParameters     SP3    200        50          700        3     No         20       15          Yes      200     5        5        2        7        1
+RiskParameters     SP4    200        50          700        3     No         20       15          Yes      200     5        5        2        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2               4            10            30              13             0             0
+BetfairTradedVolume      1            2               4            10            30              13             0             0
+BetfairTradedVolume      2            2               4            10            30              13             0             0
+BetfairTradedVolume      3            2               4            10            30              13             0             0
+BetfairTradedVolume      4            2               4            10            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "Bend (AUS) 9th Nov"                         28008395            -5
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     5        5        3        7        1
+RiskParameters     SP1    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP2    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP3    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP4    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2               4            10            30              13             0             0
+BetfairTradedVolume      1            2               4            10            30              13             0             0
+BetfairTradedVolume      2            2               4            10            30              13             0             0
+BetfairTradedVolume      3            2               4            10            30              13             0             0
+BetfairTradedVolume      4            2               4            10            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "Rock (AUS) 9th Nov"                         28008411            -5
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     5        5        3        7        1
+RiskParameters     SP1    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP2    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP3    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP4    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2               4            10            30              13             0             0
+BetfairTradedVolume      1            2               4            10            30              13             0             0
+BetfairTradedVolume      2            2               4            10            30              13             0             0
+BetfairTradedVolume      3            2               4            10            30              13             0             0
+BetfairTradedVolume      4            2               4            10            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "Cran (AUS) 9th Nov"                         28008363            -5
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     5        5        3        7        1
+RiskParameters     SP1    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP2    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP3    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP4    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2               4            10            30              13             0             0
+BetfairTradedVolume      1            2               4            10            30              13             0             0
+BetfairTradedVolume      2            2               4            10            30              13             0             0
+BetfairTradedVolume      3            2               4            10            30              13             0             0
+BetfairTradedVolume      4            2               4            10            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "WPrk (AUS) 9th Nov"                         28008410            -5
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     5        5        3        7        1
+RiskParameters     SP1    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP2    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP3    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP4    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2               4            10            30              13             0             0
+BetfairTradedVolume      1            2               4            10            30              13             0             0
+BetfairTradedVolume      2            2               4            10            30              13             0             0
+BetfairTradedVolume      3            2               4            10            30              13             0             0
+BetfairTradedVolume      4            2               4            10            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "Rich (AUS) 9th Nov"                         28008409            -5
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     5        5        3        7        1
+RiskParameters     SP1    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP2    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP3    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP4    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2               4            10            30              13             0             0
+BetfairTradedVolume      1            2               4            10            30              13             0             0
+BetfairTradedVolume      2            2               4            10            30              13             0             0
+BetfairTradedVolume      3            2               4            10            30              13             0             0
+BetfairTradedVolume      4            2               4            10            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "APrk (AUS) 9th Nov"                         28008414            -5
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     5        5        3        7        1
+RiskParameters     SP1    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP2    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP3    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP4    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2               4            10            30              13             0             0
+BetfairTradedVolume      1            2               4            10            30              13             0             0
+BetfairTradedVolume      2            2               4            10            30              13             0             0
+BetfairTradedVolume      3            2               4            10            30              13             0             0
+BetfairTradedVolume      4            2               4            10            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "Canb (AUS) 9th Nov"                         28008397            -5
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     5        5        3        7        1
+RiskParameters     SP1    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP2    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP3    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP4    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2               4            10            30              13             0             0
+BetfairTradedVolume      1            2               4            10            30              13             0             0
+BetfairTradedVolume      2            2               4            10            30              13             0             0
+BetfairTradedVolume      3            2               4            10            30              13             0             0
+BetfairTradedVolume      4            2               4            10            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "Mead (AUS) 9th Nov"                         28008396            -5
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     5        5        3        7        1
+RiskParameters     SP1    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP2    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP3    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP4    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2               4            10            30              13             0             0
+BetfairTradedVolume      1            2               4            10            30              13             0             0
+BetfairTradedVolume      2            2               4            10            30              13             0             0
+BetfairTradedVolume      3            2               4            10            30              13             0             0
+BetfairTradedVolume      4            2               4            10            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "Ball (AUS) 9th Nov"                         28008371            -5
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     5        5        3        7        1
+RiskParameters     SP1    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP2    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP3    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP4    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2               4            10            30              13             0             0
+BetfairTradedVolume      1            2               4            10            30              13             0             0
+BetfairTradedVolume      2            2               4            10            30              13             0             0
+BetfairTradedVolume      3            2               4            10            30              13             0             0
+BetfairTradedVolume      4            2               4            10            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "MGam (AUS) 9th Nov"                         28008373            -5
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     5        5        3        7        1
+RiskParameters     SP1    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP2    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP3    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP4    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2               4            10            30              13             0             0
+BetfairTradedVolume      1            2               4            10            30              13             0             0
+BetfairTradedVolume      2            2               4            10            30              13             0             0
+BetfairTradedVolume      3            2               4            10            30              13             0             0
+BetfairTradedVolume      4            2               4            10            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "AnPk (AUS) 9th Nov"                         28008372            -5
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     5        5        3        7        1
+RiskParameters     SP1    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP2    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP3    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP4    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2               4            10            30              13             0             0
+BetfairTradedVolume      1            2               4            10            30              13             0             0
+BetfairTradedVolume      2            2               4            10            30              13             0             0
+BetfairTradedVolume      3            2               4            10            30              13             0             0
+BetfairTradedVolume      4            2               4            10            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+
+
+
+
+
+
+
+               Event name                                   Event id   Parent event id
+               ==========================================   ========   ===============
+EventDetails   "Hatr (NZL) 9th Nov"                         28008394            -6
+
+
+
+                 Robot  Risk    Iceberg   Back stake   Market  Close  Lock loss  Close pos    Liquidity  Kelly  N Back   N Lay    Margin   Margin
+                 Name   limit   limit     limit        depth   mode   limit      count limit  enabled    Bank   Margins  Margins  Step     Index    Scale
+                 =====  =====   =======   ==========   ======  ====   =========  ===========  =========  =====  =======  =======  =======  =======  ======
+RiskParameters       0      0         0            0        3     No         20       15          Yes        0     5        5        3        7        1
+RiskParameters     SP1    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP2    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP3    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+RiskParameters     SP4    200        50          700        3     No         20       15          Yes      200     5        5        3        7        1
+
+
+
+                      Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                       winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                      =========   =============   ============   ============   ===========   ===============
+BetfairTradedVolume      0            2               4            10            30              13             0             0
+BetfairTradedVolume      1            2               4            10            30              13             0             0
+BetfairTradedVolume      2            2               4            10            30              13             0             0
+BetfairTradedVolume      3            2               4            10            30              13             0             0
+BetfairTradedVolume      4            2               4            10            30              13             0             0
+
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           1                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           2                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           3                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+                                             Start entry override
+                      Number of winners   Period before race in mins (-1 starts from top, 0 always picks the last, i.e.fastest entry)
+                      =================   ==========================
+PollingFrequencySet           4                      -1
+
+
+                   Period before   Prices polling
+                    race (mins)    period (msecs)
+                   =============   ==============
+PollingFrequency         5             300               1              -1              -1
+
+
+
+
+
+                                        Factor
+                                       =========
+                   Number of winners   LHS   RHS
+                   =================   ===   ===
+LiquidityCheck             0           10     10
+LiquidityCheck             1           10     10
+LiquidityCheck             2           10     10
+LiquidityCheck             3           10     10
+LiquidityCheck             4           10     10
+
+
+
+                                         Target factor      Y Margin         Tolerance         X-over mode
+                                         =============     ==========     ==========     ==================
+                   Number of winners     Lay      Back     Lay   Back     Near  Far      no, allow, enforce
+                   =================     ===      ====     ===   ====     ===   ====     ==================
+SpreadParameters           SP1               7        7       13    13       1      5            allow
+SpreadParameters           SP2               7        7       13    13       1      5            allow
+SpreadParameters           SP3               7        7       13    13       1      5            allow
+SpreadParameters           SP4               7        7       13    13       1      5            allow
+

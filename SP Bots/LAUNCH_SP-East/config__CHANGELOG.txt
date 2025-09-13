@@ -1,0 +1,412 @@
+SP CONFIG CHANGELOG
+===================
+
+PLEASE WRITE BELOW:
+* THE DATE AND TIME THAT YOU MADE THE CHANGE, AND YOUR NAME.
+* WHY YOU CHANGED THE CONFIG.
+* THE CHANGES THAT YOU MADE.
+
+##############################################################################
+
+2016-11-03 17:00 Nick
+
+* Smooth out the NZ barriers from 2 barriers to 5 barriers.
+
+NZ
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   200   200    700     5    5       2       7      4      10      30
+SP2   200   200    700     5    5       2       7      4      10      30
+SP3   200   200    700     5    5       2       7      4      10      30
+SP4   200   200    700     5    5       2       7      4      10      30
+
+##############################################################################
+
+2016-11-03 12:55 Nick
+
+* Bettors on Aus greyhounds seem to be very price insensitive, often matching 
+  all my barriers from 10% to 18% margins. I am increasing the margin step
+  from 2% to 3%.
+
+Greyhounds
+==========       back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   200   200    700     5    5       3       7      4      10      30
+SP2   200   200    700     5    5       3       7      4      10      30
+SP3   200   200    700     5    5       3       7      4      10      30
+SP4   200   200    700     5    5       3       7      4      10      30
+
+##############################################################################
+
+2016-11-03 10:55 Nick
+
+* Smooth out the greyhounds barriers some more by increasing the number of 
+  barriers from 4 to 5.
+
+Greyhounds
+==========       back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   200   200    700     5    5       2       7      4      10      30
+SP2   200   200    700     5    5       2       7      4      10      30
+SP3   200   200    700     5    5       2       7      4      10      30
+SP4   200   200    700     5    5       2       7      4      10      30
+
+##############################################################################
+
+2016-10-29 14:30 Nick
+
+* Greyhounds lost £4k today. I see some evidence of running up the price
+  then collecting our barriers. I will divide the risk among more barriers.
+  * Each mini-barrier is a less-tempting target for poachers (and bots).
+  * Better prices.
+  * Multiply by 2: n back, n lay.
+  * Divide by 2: back risk, lay risk, margin step.
+  * Divide by 4: accum risk limit, window risk limit.
+
+Greyhounds
+==========       back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   250   250    700     4    4       3       7      5      13      30
+SP2   250   250    700     4    4       3       7      5      13      30
+SP3   250   250    700     4    4       3       7      5      13      30
+SP4   250   250    700     4    4       3       7      5      13      30
+
+##############################################################################
+
+2016-10-23 16:30 Nick
+
+* New build: Do not close positions (that were opened before the off) with a 
+  MOC bet. This now applies to NZ horse racing and AU & NZ greyhounds too. 
+  (It has applied to AU horse racing since 2016-10-20 16:00.)
+* Increase NZ horse racing and AU & NZ greyhounds risk values from £50 to £500.
+  I am confident that the accumulative and window risk limits will protect us
+  from malicious bettors.
+
+NZ
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   500   500    700     2    2       5       7     20      50      30
+SP2   500   500    700     2    2       5       7     20      50      30
+SP3   500   500    700     2    2       5       7     20      50      30
+SP4   500   500    700     2    2       5       7     20      50      30
+
+Greyhounds
+==========       back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   500   500    700     2    2       5       7     20      50      30
+SP2   500   500    700     2    2       5       7     20      50      30
+SP3   500   500    700     2    2       5       7     20      50      30
+SP4   500   500    700     2    2       5       7     20      50      30
+
+##############################################################################
+
+2016-10-20 16:00 Nick
+
+* New build: Aus horse racing no longer closes positions (that were opened 
+  before the off) with a MOC bet. Analysis of the past few days showed that
+  bets matched before the off were profitable.  
+
+##############################################################################
+
+2016-10-16 16:30 Nick
+
+* New build that applies the accumulative and window risk limits to all AU and
+  NZ events, not only AU horse racing.
+* Set the accumulative and window risk limit configs for NZ horse racing and
+  AU & NZ greyhounds to be the same as the configs for AU horse racing.
+* Increase NZ horse racing and AU & NZ greyhounds risk values from £10 to £50.
+
+AU
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1   500  1000    700     2    2       5       7     20      50      30
+SP2   600  1000    700     2    2       5       7     20      50      30
+SP3   600  1000    700     2    2       5       7     20      50      30
+SP4   600  1000    700     2    2       5       7     20      50      30
+
+NZ
+==               back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1    50    50    700     2    2       5       7     20      50      30
+SP2    50    50    700     2    2       5       7     20      50      30
+SP3    50    50    700     2    2       5       7     20      50      30
+SP4    50    50    700     2    2       5       7     20      50      30
+
+Greyhounds
+==========       back-                             accum  window
+     back   lay  stake  back  lay  margin  margin   risk    risk  window
+	 risk  risk  limit     n    n    step   index  limit   limit    size
+SP1    50    50    700     2    2       5       7     20      50      30
+SP2    50    50    700     2    2       5       7     20      50      30
+SP3    50    50    700     2    2       5       7     20      50      30
+SP4    50    50    700     2    2       5       7     20      50      30
+
+margins.txt
+===========
+Price L0 B0  L1 B1  L2 B2  L3 B3  L4 B4  L5 B5  L6 B6  L7 B7
+1.01   6  8   7 10   7  7  13  7   7  6   8 10  15 10  10 10
+
+##############################################################################
+
+2016-10-13 16:00 Nick
+
+* Finally set AU back to full risk.
+
+AU
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1      500    1000     2    2          5           7
+SP2      600    1000     2    2          5           7
+SP3      600    1000     2    2          5           7
+SP4      600    1000     2    2          5           7
+
+##############################################################################
+
+2016-10-12 16:15 Nick
+
+* The new bot didn't crash or lose lots of money. Increase AU risk values
+  to half of the full risk (because the markets may be different since the
+  move from Tasmania to Dublin).
+
+AU
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1      250     500     2    2          5           7
+SP2      300     500     2    2          5           7
+SP3      300     500     2    2          5           7
+SP4      300     500     2    2          5           7
+
+##############################################################################
+
+2016-10-11 22:00 Nick
+
+* Replaced the bot with a new build:
+  * Work around a crash when computing the chunk size after an order has been 
+    filled.
+  * Merge Bruno's margins.txt parser into my code base. Otherwise the margin
+    is 0, which is always increased to be at least one tick beyond the 3rd
+	market-depth price level.
+  * Now my build always bets identically to the old Tasmania SP-bot (except
+    for price differences in higher-margin lay bets, which I think are because
+	the lay data-collection MOC bets placed by the old bot counted as a 
+	barrier).
+
+##############################################################################
+
+2016-10-10 17:00 Nick
+
+* I have attempted to replicate the behaviour of the old SP bot on the Tasmania
+  server (which I think is SVN revision 27 or 28) in my new bot, but only for
+  Aus horse racing:
+  * Use the old formulae in CBetFairSPRobot::GetPrice and GetPercentage that
+    were replaced by Arjen in SVN revision 34, 2015-02-23.
+  * Use the window and accumulative risk and stake limits that were deactivated
+    in the code by Arjen in SVN revision 40, 2015-03-13.
+  * Don't replace stakes < £2 with £2.
+* The old Tasmania bot only read the first line of the BetfairTradedVolume
+  config. My new bot does not make this mistake. Therefore I have replaced the
+  old values:
+  
+  AU
+  ==
+                        Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                         winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                        =========   =============   ============   ============   ===========   ===============
+  BetfairTradedVolume       0             2              20             50            30              13
+  BetfairTradedVolume       1             2              20             50            30              13
+  BetfairTradedVolume       2             2              40            100            30              25
+  BetfairTradedVolume       3             2              40            100            30              25
+  BetfairTradedVolume       4             2              40            100            30              25
+  
+  with each line being the same as the line for 0 winners:
+
+  AU
+  ==
+                        Number of     Pre-start     Accumulative      Window        Window      Opposite market
+                         winners    period (mins)   risk limit %   risk limit %   size (secs)     divergent %
+                        =========   =============   ============   ============   ===========   ===============
+  BetfairTradedVolume       0             2              20             50            30              13
+  BetfairTradedVolume       1             2              20             50            30              13
+  BetfairTradedVolume       2             2              20             50            30              13
+  BetfairTradedVolume       3             2              20             50            30              13
+  BetfairTradedVolume       4             2              20             50            30              13
+  
+* My new bot still closes open positions by placing MOC bets.
+* My new bot now places bets at identical prices and stakes to those of the
+  old Tasmania bot when I tested it on greyhounds.
+
+##############################################################################
+
+2016-10-03 22:35 Nick
+
+* SP Aus had about fives times its usual turnover this weekend. I am reducing
+  the risk again until I have compared the margins calculated by the old bot
+  and my new bots.
+
+AU
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1       50     100     2    2          5           7
+SP2       60     100     2    2          5           7
+SP3       60     100     2    2          5           7
+SP4       60     100     2    2          5           7
+
+##############################################################################
+
+2016-10-01 12:35 Nick
+
+* I replaced my previous bot with a new build that closes positions with a MOC
+  bet:
+  * The new build did well in a test account overnight. Therefore I restored
+    the AU config to full risk.
+  * The new build does not lay each runner with a MOC bet for data collection.
+    (This is now done by a separate robot in magicianltd01.) Therefore I
+	subtracted 1 lay barrier from each config.
+
+AU
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1      500    1000     2    2          5           7
+SP2      600    1000     2    2          5           7
+SP3      600    1000     2    2          5           7
+SP4      600    1000     2    2          5           7
+
+NZ
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1       10      10     2    2          5           7
+SP2       10      10     2    2          5           7
+SP3       10      10     2    2          5           7
+SP4       10      10     2    2          5           7
+
+Greyhounds
+==========
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1       10      10     2    2          5           7
+SP2       10      10     2    2          5           7
+SP3       10      10     2    2          5           7
+SP4       10      10     2    2          5           7
+
+##############################################################################
+
+2016-09-23 07:25 Nick
+
+* AUS is still losing money. I have decreased all AUS risk values tenfold again
+  to be <= 10:
+
+AU
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1        5      10     2    3          5           7
+SP2        6      10     2    3          5           7
+SP3        6      10     2    3          5           7
+SP4        6      10     2    3          5           7
+
+##############################################################################
+
+2016-09-23 22:00 Nick
+
+* AUS lost £12k today on win/place lay bets matched before close. I think
+  the market is too volatile after the API switchover from Tasmania. I have
+  decreased all AUS risk values tenfold:
+
+AU
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1       50     100     2    3          5           7
+SP2       60     100     2    3          5           7
+SP3       60     100     2    3          5           7
+SP4       60     100     2    3          5           7
+
+##############################################################################
+
+2016-09-22 09:00 Nick
+
+* Create beginner configs for NZ horse racing and AU NZ greyhounds:
+
+NZ
+==
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1       10      10     2    3          5           7
+SP2       10      10     2    3          5           7
+SP3       10      10     2    3          5           7
+SP4       10      10     2    3          5           7
+
+Greyhounds
+==========
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1       10      10     2    3          5           7
+SP2       10      10     2    3          5           7
+SP3       10      10     2    3          5           7
+SP4       10      10     2    3          5           7
+
+##############################################################################
+
+2016-09-20 07:00 Nick
+
+* Betfair moves all its AUS markets from Tasmania to Dublin.
+
+##############################################################################
+
+2016-09-19 10:00 Nick
+
+* I am making a new bot "SP-East" for when Betfair moves all its AUS markets 
+  from Tasmania to Dublin.
+* I just realised that when I replaced the old bot with my new bot last week,
+  I also replaced the old margins file with a new margins file. SP AUS has
+  been running with 12% margins instead of 10% margins for the past week.
+  The first line in margins.txt was:
+    Price L0 B0  L1 B1  L2 B2  L3 B3  L4 B4  L5 B5  L6 B6  L7 B7  L8 B8
+    1.01  3  3   4  4   5  7   6  6   7  7   8  8   10 10  12 12  14 12
+  I've changed the first line in margins.txt to:
+    Price L0 B0  L1 B1  L2 B2  L3 B3  L4 B4  L5 B5  L6 B6  L7 B7
+    1.01   6  8   7 10   7  7  13  7   7  6   8 10  15 10  10 10
+	
+##############################################################################
+
+2016-09-13 22:00 Nick
+
+* After running a new bot in a test account for a few days without problems,
+  I replaced the old SP bot with my new bot. This is in preparation for next 
+  week when Betfair moves all its AUS markets from Tasmania to Dublin.
+
+##############################################################################
+
+2016-07-01 16:30 Nick
+
+* Update config after Bernard and Nick studied the volume, turnover, PnL and 
+  RoI of the previous configs (from 2015-04 to 2016-06).
+  * Bernard's risk values, with the same 10% margins.
+
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1      500    1000     2    3          5           7
+SP2      600    1000     2    3          5           7
+SP3      600    1000     2    3          5           7
+SP4      600    1000     2    3          5           7
+
+##############################################################################
+
+2016-06-29 15:00 Nick
+
+* Start the CHANGELOG.
+
+Margins
+=======
+The first line in margins.txt is:
+  6 8, 7 10, 7 7, 13 7, 7 6, 8 10, 15 10, 10 10
+
+    backRisk layRisk nBack nLay marginStep marginIndex
+SP1      100     200     2    3          5           7
+SP2       70     150     2    3          5           7
+SP3       70     150     2    3          5           7
+SP4       70     150     2    3          5           7
+
+##############################################################################

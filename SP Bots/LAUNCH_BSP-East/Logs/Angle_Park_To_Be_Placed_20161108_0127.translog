@@ -1,0 +1,60 @@
+GEN INFOMon Nov 07 22:28:26 2016
+
+ ------------------------------------------
+ m_exchange_id = 0
+ m_id = 28007218
+ m_name = AnPk (AUS) 8th Nov
+ m_parent_id = -13
+ ------------------------------------------
+ m_parent_event_id = 28007218
+ m_id = 1.128124721
+ m_name = To Be Placed
+ m_start_time = 20161108_0127
+ ------------------------------------------
+ m_is_dog_racing, m_eachWayMarket, m_placeMarket, m_otherPlaceMarket
+========================================================================
+GEN INFOTue Nov 08 00:59:53 2016
+
+ ------------------------------------------
+ m_exchange_id = 0
+ m_id = 28007218
+ m_name = AnPk (AUS) 8th Nov
+ m_parent_id = -5
+ ------------------------------------------
+ m_parent_event_id = 28007218
+ m_id = 1.128124721
+ m_name = To Be Placed
+ m_start_time = 20161108_0127
+ ------------------------------------------
+ m_is_dog_racing, m_eachWayMarket, m_placeMarket, m_otherPlaceMarket
+========================================================================
+GEN INFOTue Nov 08 01:00:53 2016
+
+ ------------------------------------------
+ m_exchange_id = 0
+ m_id = 28007218
+ m_name = AnPk (AUS) 8th Nov
+ m_parent_id = -5
+ ------------------------------------------
+ m_parent_event_id = 28007218
+ m_id = 1.128124721
+ m_name = To Be Placed
+ m_start_time = 20161108_0127
+ ------------------------------------------
+ m_is_dog_racing, m_eachWayMarket, m_placeMarket, m_otherPlaceMarket
+========================================================================
+GEN INFOTue Nov 08 01:05:23 2016
+
+ ------------------------------------------
+ m_exchange_id = 0
+ m_id = 28007218
+ m_name = AnPk (AUS) 8th Nov
+ m_parent_id = -5
+ ------------------------------------------
+ m_parent_event_id = 28007218
+ m_id = 1.128124721
+ m_name = To Be Placed
+ m_start_time = 20161108_0127
+ ------------------------------------------
+ m_is_dog_racing, m_eachWayMarket, m_placeMarket, m_otherPlaceMarket
+========================================================================
